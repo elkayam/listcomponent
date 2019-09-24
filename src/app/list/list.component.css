@@ -1,0 +1,107 @@
+.menu {
+  display: flex;
+  background-color: white;
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.menu>div {
+  padding: 1.5vmin;
+  margin: 0.1vmin;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu >div > h4{
+  margin:0;
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 60vw;
+  background-color: red;
+  margin: 0 auto;
+}
+
+.container>.rowOrCard {
+  display: flex;
+  background-color: white;
+  margin-bottom: 2vh;
+  box-shadow: 0px 2px 1px 1px rgba(0, 0, 0, 0.1);
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.container>.rowOrCard>.image{
+  padding:0;
+}
+.rowOrCard>div {
+  background-color: white;
+  margin: 0.1vmin;
+}
+
+.container>.rowOrCard>div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 60vw;
+  background-color: red;
+  margin: 0 auto;
+}
+
+.container-card>.rowOrCard {
+  display: flex;
+  background-color: white;
+  margin-bottom: 2vh;
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  justify-content: space-around;
+  width: 20%;
+  margin:1vmin;
+  flex-wrap: wrap;
+}
+
+.container-card>.rowOrCard>div {
+  width: 49%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.container-card>.rowOrCard>div>h4 {
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.container-card>.rowOrCard>.image {
+  width: 100%;
+  padding: 0;
+}
+
+.container-card>.rowOrCard>.image>img {
+  width: 100%;
+  max-width: unset;
+}
+
+.rowOrCard>div {
+  background-color: white;
+  /* align-self: stretch; */
+  margin: 0.1vmin;
+}
+
+.image>img {
+  max-width: 100%;
+}

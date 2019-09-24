@@ -1,0 +1,36 @@
+<input type="button" value="toggle!" (click)="toggleListOrCard()" />
+<div [ngClass]="list ? 'container' : 'container-card'">
+  <div *ngIf="list" class="menu">
+    <div *ngFor="let header of headers">
+      <h4>{{ header }}</h4>
+    </div>
+  </div>
+  <div *ngFor="let movie of movies" class="rowOrCard">
+    <div class="image">
+      <img src="https://i.ytimg.com/vi/848q7WLmwbk/maxresdefault.jpg" />
+    </div>
+    <div *ngIf="list">
+      {{movie.id}}
+    </div>
+    <div>
+      <h4 *ngIf="!list">Title</h4>
+      {{movie.name}}
+    </div>
+    <div>
+      <h4 *ngIf="!list">Length</h4>
+      {{movie.mlength}}
+    </div>
+    <div>
+      <h4 *ngIf="!list">Author</h4>
+      {{movie.author}}
+    </div>
+    <div>
+      <h4 *ngIf="!list">Imdb</h4>
+      {{movie.imdb}}
+    </div>
+    <div>
+      <h4 *ngIf="!list">Captions</h4>
+      {{movie.captions}}
+    </div>
+  </div>
+</div>
